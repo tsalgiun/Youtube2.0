@@ -1,0 +1,141 @@
+header {
+    height: 56px;
+    padding: 0 16px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body * {
+    transition: 0.3s;
+}
+
+main{
+    display: flex;
+    padding-top: 56px;
+    
+}
+
+main .left {
+    padding-inline: 16px;
+    width: 240px;
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    
+}
+main .right {
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    padding-left: 272px;
+}
+
+main .right .top {
+    background-color: white;
+    display: flex;
+    gap: 8px;
+}
+main .right .top span {
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+main .right .top span:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+main .right .bottom {
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+main .right .bottom .description {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 8px;
+}
+main .right .bottom .description img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+main .right .bottom .content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+}
+main .right .bottom .content img {
+    border-radius: 16px;
+}
+main .right .bottom .content .name {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.name p
+.name h4 {
+    margin: 0;
+}
+.name p {
+    color: #AAAAAA;
+}
+h4 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+.Youtube {
+    width: 115px;
+    justify-content: flex-start;
+    transition: 0.3s;
+}
+.Youtube:hover {
+    transform: scale(1.5);
+}
+.left p {
+    display: flex;
+    align-items: center;
+
+    padding: 8px;
+    border-radius: 8px;
+}
+.left p:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+
+
+/* 1201px and more —  Extra large screens, Desktop */
+@media screen and (max-width: 1201px) {
+
+    main .left {
+        width: 85px;
+    }
+
+    main .right{
+        padding-left: 120px;
+    }
+}
